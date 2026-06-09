@@ -1,0 +1,18 @@
+seed = 20260609
+data_dir = "data"
+artifact_dir = "artifacts/quick"
+train_size = 500
+test_size = 100
+threshold = 128
+alpha = 0.005
+max_iterations = 100
+margin_tolerance = 1.0e-7
+max_recall_steps = 30
+checkpoint_every = 50
+strict_stability = false
+evaluation_limit = 100
+
+[augmentation]
+enabled = false
+angles = [-15.0, -5.0, 5.0, 15.0]
+scales = [0.9, 1.1]

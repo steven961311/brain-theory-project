@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "etam-mnist"
+version = "0.1.0"
+description = "Error Tolerant Associative Memory experiments on MNIST"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "scipy>=1.14",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+etam-mnist = "etam_mnist.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/etam_mnist"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
