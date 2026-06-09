@@ -1,6 +1,6 @@
-# MNIST ETAM 關聯記憶
+# Project
 
-本專案依 `spec.md` 與 Chapter 6 的 ETAM Eq.(7–12)，實作以 MNIST 為資料的
+本專案依 `spec` 與 Chapter 6 的 ETAM Eq.(7–12)，實作以 MNIST 為資料的
 Error Tolerant Associative Memory。它不是一般 CNN：每個 neuron 都是一個
 hyperplane，訓練會移動 threshold 並旋轉法向量，讓正負 training patterns
 之間的最小 margin 盡可能增加。
